@@ -1,9 +1,11 @@
 <?php
 
-namespace Frame\Controller\Composers;
+namespace Framework\Controller\Composers;
 
 
 abstract class Composer {
+
+    public $ext;
 
     public function render($file, $data) {
 

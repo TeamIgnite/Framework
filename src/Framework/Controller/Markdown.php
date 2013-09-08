@@ -1,6 +1,6 @@
 <?php
 
-namespace Frame\Controller;
+namespace Framework\Controller;
 
 use dflydev\markdown\MarkdownParser;
 
@@ -8,7 +8,7 @@ use dflydev\markdown\MarkdownParser;
  * Class Markdown
  * A controller that automatically renders markdown.
  *
- * @package Frame\Controller
+ * @package Framework\Controller
  */
 class Markdown extends Base {
 

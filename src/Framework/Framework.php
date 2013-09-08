@@ -1,6 +1,6 @@
 <?php
 
-namespace Frame;
+namespace Framework;
 
 use Klein;
 
@@ -8,7 +8,7 @@ use Klein;
  * Frame 
  * Frame is a super simple micro mvc framework. Routing is provided by Klein so it should be pretty fast.
  */
-class Frame {
+class Framework {
 
     public $klein;
 

@@ -1,6 +1,6 @@
 <?php
 
-class PlainController extends Frame\Controller\Plain {
+class PlainController extends Framework\Controller\Plain {
 
     public function index() {
         $success = 'success';

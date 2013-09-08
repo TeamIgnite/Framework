@@ -1,8 +1,8 @@
 <?php
 
-namespace Frame\Controller;
+namespace Framework\Controller;
 
-use Frame\Router;
+use Framework\Router;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Klein;
@@ -11,7 +11,7 @@ use Klein;
  * Class Resource
  * This controller type directly binds models to data
  *
- * @package Frame\Controller
+ * @package Framework\Controller
  */
 class Resource extends JSON {
 

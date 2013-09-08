@@ -1,8 +1,8 @@
 <?php
 
-namespace Frame\DB;
+namespace Framework\DB;
 
-use Frame\Config;
+use Framework\Config;
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Illuminate\Events\Dispatcher;
 use Illuminate\Container\Container;

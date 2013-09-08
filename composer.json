@@ -1,8 +1,8 @@
 {
-    "name": "axxim/frame",
+    "name": "ignite/framework",
     "description": "A lightning fast framework for PHP",
-    "keywords": ["framework", "routing", "boilerplate", "frame"],
-    "homepage": "https://github.com/axxim/frame",
+    "keywords": ["framework", "routing", "boilerplate", "ignite"],
+    "homepage": "https://github.com/TeamIgnite/Framework",
     "license": "BSD-3",
     "authors": [
         {
@@ -27,12 +27,15 @@
         "twig/twig": "1.*"
     },
     "suggest": {
+        "illuminate/database": "Add Model/Database support",
+
         "dflydev/markdown": "Enable Markdown Controllers",
-        "illuminate/database": "Add Model/Database support"
+        "mustache/mustache": "Enable the Mustache view composer",
+        "twig/twig": "Enable the Twig view composer"
     },
     "autoload": {
         "psr-0": { 
-            "Frame": "src/" 
+            "Framework": "src/"
         }
     }
 }

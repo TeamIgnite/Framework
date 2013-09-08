@@ -1,6 +1,6 @@
 <?php
 
-namespace Frame\Controller;
+namespace Framework\Controller;
 
 use Klein;
 
@@ -9,7 +9,7 @@ use Klein;
  * This is what a controller should do. Render methods are underscored so we
  * don't conflict with /controller/render
  *
- * @package Frame\Controller
+ * @package Framework\Controller
  */
 abstract class Base {
 
