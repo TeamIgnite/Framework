@@ -24,8 +24,11 @@ class Config {
      * Load all of the files and the config items they contain.
      */
     public function __construct() {
+
+        // If we haven't loaded any files yet find some
         if(empty($files)) {
             $this->files = $this->findFiles();
+
             foreach($this->files as $file) {
                 $this->items[str_replace('.php', '', $file)] = $this->loadItems($file);
             }
@@ -40,7 +43,9 @@ class Config {
      * @return bool
      */
     public function exists($key) {
-        return isset($this->items[$key]);
+        $item = array_get($this->items, $key);
+
+        return isset($item);
     }
 
     /**
@@ -51,15 +56,17 @@ class Config {
      * @return mixed
      */
     public function get($key) {
-        if (!isset($this->items[$key])) {
+        if(!$this->exists($key)) {
             return false;
         }
 
-        return $this->items[$key];
+        return array_get($this->items, $key);
     }
 
     public function put($key, $value) {
+        array_set($this->items, $key, $value);
 
+        return $value;
     }
 
     private function findFiles() {
