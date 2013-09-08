@@ -1,6 +1,6 @@
 <?php
 
-namespace Frame\Controller\Composers;
+namespace Framework\Controller\Composers;
 
 
 class PHP extends Composer {

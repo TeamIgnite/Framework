@@ -1,6 +1,6 @@
 <?php
 
-class MarkdownController extends Frame\Controller\Markdown {
+class MarkdownController extends Framework\Controller\Markdown {
 
     public function index() {
         $markdown = "## Hello";

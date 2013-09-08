@@ -1,12 +1,12 @@
 <?php
 
-namespace Frame\Controller;
+namespace Framework\Controller;
 
 /**
  * Class View
  * Renders HTML views
  *
- * @package Frame\Controller
+ * @package Framework\Controller
  */
 class View extends Base {
 
@@ -32,7 +32,7 @@ class View extends Base {
      * Which view composer?
      * @var string
      */
-    public $composer = 'Frame\\Controller\\Composers\\Mustache';
+    public $composer = 'Framework\\Controller\\Composers\\Mustache';
 
     public $data;
 

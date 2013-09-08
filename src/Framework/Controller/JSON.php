@@ -1,11 +1,11 @@
 <?php
 
-namespace Frame\Controller;
+namespace Framework\Controller;
 
 /**
  * Class JSON
  * This will output pure json
- * @package Frame\Controller
+ * @package Framework\Controller
  */
 class JSON extends Base {
 

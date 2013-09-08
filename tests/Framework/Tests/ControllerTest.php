@@ -1,5 +1,5 @@
 <?php
-namespace Frame\Tests;
+namespace Framework\Tests;
 
 
 class ControllerTest extends AbstractFrameTest {

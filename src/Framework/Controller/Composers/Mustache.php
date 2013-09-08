@@ -1,6 +1,6 @@
 <?php
 
-namespace Frame\Controller\Composers;
+namespace Framework\Controller\Composers;
 
 use Mustache_Engine;
 
@@ -8,7 +8,7 @@ use Mustache_Engine;
  * Class Mustache
  * This View Composer handles Mustache support
  *
- * @package Frame\Controller\Composers
+ * @package Framework\Controller\Composers
  */
 class Mustache extends Composer {
 

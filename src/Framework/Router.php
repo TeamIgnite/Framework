@@ -1,6 +1,6 @@
 <?php
 
-namespace Frame;
+namespace Framework;
 
 use Klein;
 
@@ -44,7 +44,7 @@ class Router {
 
                     // Handle resource controllers
                     require_once app_path("controllers/$controller.php");
-                    $routes = $controller::_registerRoutes($this, $path, $controller);
+                    $controller::_registerRoutes($this, $path, $controller);
                 } else {
                     $explodedAction = explode('@', $controllerAction);
                     list($controller, $action) = $explodedAction;

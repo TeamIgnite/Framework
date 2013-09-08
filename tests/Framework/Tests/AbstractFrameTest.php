@@ -1,8 +1,8 @@
 <?php
 
-namespace Frame\Tests;
+namespace Framework\Tests;
 
-use Frame\Frame;
+use Framework\Framework;
 use Goutte\Client;
 use PHPUnit_Framework_TestCase;
 
@@ -17,7 +17,7 @@ abstract class AbstractFrameTest extends PHPUnit_Framework_TestCase {
 
     protected function setUp() {
         // This isn't ready
-        $this->frameApp = new Frame();
+        $this->frameApp = new Framework();
         $this->browser = new Client();
     }
 

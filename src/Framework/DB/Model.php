@@ -1,6 +1,6 @@
 <?php
 
-namespace Frame\DB;
+namespace Framework\DB;
 
 use Illuminate\Database\Eloquent;
 
