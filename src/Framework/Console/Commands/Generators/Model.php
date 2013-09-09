@@ -31,7 +31,7 @@ class Model implements Generator {
     }
 
     /**
-     * Markdown controller generator
+     * Basic Model Generator
      *
      * @param $name
      *
