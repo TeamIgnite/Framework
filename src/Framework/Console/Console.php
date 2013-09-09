@@ -2,6 +2,7 @@
 
 namespace Framework\Console;
 
+use Framework\Console\Commands\GenerateController;
 use Framework\Console\Commands\Serve;
 
 use Symfony\Component\Console\Application;
@@ -17,6 +18,9 @@ class Console {
         $this->app = new Application();
 
         $this->load(new Serve);
+
+        // Load generators
+        $this->load(new GenerateController);
     }
 
     /**
