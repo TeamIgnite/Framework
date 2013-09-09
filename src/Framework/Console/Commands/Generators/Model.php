@@ -2,6 +2,8 @@
 
 namespace Framework\Console\Commands\Generators;
 
+use Exception;
+
 /**
  * Class Model
  * Model generator
@@ -10,10 +12,22 @@ namespace Framework\Console\Commands\Generators;
  */
 class Model implements Generator {
 
+    private $allowedTypes = array('basic');
+
     public $dir = 'models';
 
     public function generate($name, $type) {
+        $name = str_replace('Model', '', $name);
+        $type = strtolower($type);
 
+        if(!in_array($type, $this->allowedTypes)) {
+            throw new Exception('Type not found');
+        }
+
+        $function = $type . 'Model';
+        $output = $this->$function($name);
+
+        $this->save($name . '.php', $output);
     }
 
     /**
@@ -23,16 +37,18 @@ class Model implements Generator {
      *
      * @return mixed
      */
-    public function model($name) {
-        $markdown = "<?php
+    public function basicModel($name) {
+        $model = '<?php
 
-        class [[CONTROLLER]] extends Framework\\Controller\\Markdown {
+use Frame\DB\Model as Model;
 
-        }
+class [[MODEL]] extends Model {
 
-        ";
+}
 
-        $controller = str_replace('[[CONTROLLER]]', $name, $markdown);
+';
+
+        $controller = str_replace('[[MODEL]]', $name, $model);
 
 
         return $controller;
@@ -40,7 +56,7 @@ class Model implements Generator {
 
     private function save($file, $text) {
         $directory = app_path($this->dir);
-        $file = realpath($directory) . $file;
+        $file = realpath($directory) . '/' . $file;
 
         file_put_contents($file, $text);
     }

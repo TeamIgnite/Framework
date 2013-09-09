@@ -3,6 +3,7 @@
 namespace Framework\Console;
 
 use Framework\Console\Commands\GenerateController;
+use Framework\Console\Commands\GenerateModel;
 use Framework\Console\Commands\Serve;
 
 use Symfony\Component\Console\Application;
@@ -21,6 +22,7 @@ class Console {
 
         // Load generators
         $this->load(new GenerateController);
+        $this->load(new GenerateModel);
     }
 
     /**
