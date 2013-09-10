@@ -55,6 +55,10 @@ class Router {
         }
     }
 
+    public function parse() {
+
+    }
+
     /**
      * Coming soon
      */

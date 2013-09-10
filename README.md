@@ -1,4 +1,4 @@
-Ignite Framework v0.2.0 [![Travis CI](http://origin.shields.io/travis-ci/TeamIgnite%2FFramework.png)](https://travis-ci.org/TeamIgnite/Framework)  [![Gittip](http://origin.shields.io/gittip/clone1018.png)](https://www.gittip.com/clone1018/)
+Ignite Framework v0.3.0 [![Travis CI](http://origin.shields.io/travis-ci/TeamIgnite%2FFramework.png)](https://travis-ci.org/TeamIgnite/Framework)  [![Gittip](http://origin.shields.io/gittip/clone1018.png)](https://www.gittip.com/clone1018/)
 =====
 
 The Ignite Framework is a super fast PHP framework that uses Klein for routing.

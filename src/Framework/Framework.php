@@ -5,8 +5,8 @@ namespace Framework;
 use Klein;
 
 /**
- * Frame 
- * Frame is a super simple micro mvc framework. Routing is provided by Klein so it should be pretty fast.
+ * Framework
+ * Framework is a super simple micro mvc framework. Routing is provided by Klein so it should be pretty fast.
  */
 class Framework {
 
