@@ -12,8 +12,8 @@ use dflydev\markdown\MarkdownParser;
  */
 class Markdown extends Base {
 
-    public function _render($out, $args) {
-        parent::_render($out, $args);
+    public function _render($class, $method, $args) {
+        $out = parent::_render($class, $method, $args);
 
         $parser = new MarkdownParser();
         $html = $parser->transformMarkdown($out);
