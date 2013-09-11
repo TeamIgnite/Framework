@@ -73,6 +73,7 @@ class Config {
         $files = array();
         foreach (new DirectoryIterator(app_path('config')) as $fileInfo) {
             if($fileInfo->isDot()) continue;
+            if(!$fileInfo->isFile()) continue;
 
             array_push($files, $fileInfo->getFilename());
         }
