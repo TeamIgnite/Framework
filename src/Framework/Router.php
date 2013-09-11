@@ -33,6 +33,8 @@ class Router {
             // if we're dealing with a namespace
             if(is_array($controllerAction)) {
 
+                //
+
             } else {
                 $explodedRoute = explode(' ', $route);
                 list($method, $path) = $explodedRoute;
@@ -81,7 +83,7 @@ class Router {
             $class = new $controller($request, $response, $service);
 
             $class->_preRender();
-            echo $class->_render($class->$action(), array());
+            $class->_render($class, $action, array('id' => 'test'));
             $class->_postRender();
         });
 

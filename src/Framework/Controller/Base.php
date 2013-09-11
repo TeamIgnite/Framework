@@ -31,6 +31,8 @@ abstract class Base {
      */
     public $service;
 
+    public $out;
+
     /**
      * Provide variables
      *
@@ -48,8 +50,17 @@ abstract class Base {
 
     }
 
-    public function _render($out, $args) {
-
+    /**
+     * Render the controller
+     *
+     * @param Controller $class Controller Instance
+     * @param $method
+     * @param $args
+     *
+     * @return mixed
+     */
+    public function _render($class, $method, $args) {
+        return call_user_func_array(array($class, $method), $args);
     }
 
     public function _postRender() {

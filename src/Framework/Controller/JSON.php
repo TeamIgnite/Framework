@@ -9,8 +9,8 @@ namespace Framework\Controller;
  */
 class JSON extends Base {
 
-    public function _render($out, $args) {
-        parent::_render($out, $args);
+    public function _render($class, $method, $args) {
+        $out = parent::_render($class, $method, $args);
 
         $this->response->noCache();
 
